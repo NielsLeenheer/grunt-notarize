@@ -14,3 +14,32 @@ One the plugin has been installed, it may be enabled inside your Gruntfile with 
 ```js
 grunt.loadNpmTasks('grunt-notarize');
 ```
+
+## The "notarize" task
+
+### Overview
+In your project's Gruntfile, add a section named `notarize` to the data object passed into `grunt.initConfig()`.
+
+```js
+grunt.initConfig({
+    notarize: {
+        intel: {
+            'appBundleId': "com.html5test.electron",
+            'appPath': "build/tmp/HTML5test-darwin-x64/HTML5test.app",
+            'appleId': 'info@html5test.com',
+            'appleIdPassword': '************',
+            'ascProvider': 'JDSEI39D3E'
+        },
+
+        arm: {
+            'appBundleId': "com.html5test.electron",
+            'appPath': "build/tmp/HTML5test-darwin-arm64/HTML5test.app",
+            'appleId': 'info@html5test.com',
+            'appleIdPassword': '************',
+            'ascProvider': 'JDSEI39D3E'
+        }
+    }
+})
+```
+
+For each app that you want to notarize you can add a section. Each sections has a couple of options that you need to set, such as your bundle id, apple id, password and your development team shortname. These options are documented in the [electron-notarize](https://github.com/electron/electron-notarize) project. Please read their documentation carefully. 
