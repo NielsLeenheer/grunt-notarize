@@ -1,7 +1,7 @@
 {
   "name": "grunt-notarize",
   "description": "Grunt plugin for notarizing macOS binaries using @electron/notarize",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/NielsLeenheer/grunt-notarize",
   "author": {
     "name": "Niels Leenheer",
