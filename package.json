@@ -1,7 +1,7 @@
 {
   "name": "grunt-notarize",
-  "description": "Grunt plugin for notarizing macOS binaries using electron-notarize",
-  "version": "1.0.1",
+  "description": "Grunt plugin for notarizing macOS binaries using @electron/notarize",
+  "version": "1.1.0",
   "homepage": "https://github.com/NielsLeenheer/grunt-notarize",
   "author": {
     "name": "Niels Leenheer",
@@ -33,11 +33,11 @@
   "keywords": [
     "gruntplugin"
   ],
-  "dependencies": {
-    "electron-notarize": "^1.1.1"
-  },
   "devDependencies": {
     "eslint": "^4.11.0",
     "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "@electron/notarize": "^2.1.0"
   }
 }
